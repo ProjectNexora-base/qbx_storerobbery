@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'qbx_storerobbery'
 repository 'https://github.com/Qbox-project/qbx_storerobbery'
-version '1.0.0'
+version '1.0.1'
 
 ox_lib 'locale'
 
@@ -13,7 +13,10 @@ shared_scripts {
 }
 
 client_script 'client/main.lua'
-server_script 'server/main.lua'
+server_scripts {
+	'server/main.lua',
+	'server/pn-lib-config.lua',
+}
 
 ui_page 'html/index.html'
 
